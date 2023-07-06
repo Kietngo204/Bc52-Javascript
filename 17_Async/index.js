@@ -45,6 +45,11 @@ promise.catch((error) => {
 // + POST: tạo mới một tài nguyên
 // + PUT: cập nhật một tài nguyên
 // + DELETE: xóa một tài nguyên
+// - status code
+// + 200: Success
+// + 404: Not found
+// + 400: Bad request
+// + 500: Internal server
 
 // Thực hành API
 function getUsers() {
