@@ -1,7 +1,10 @@
-function apiGetProducts() {
+function apiGetProducts(searchValue) {
   return axios({
     url: "https://64a6ad13096b3f0fcc8042a4.mockapi.io/products",
     method: "GET",
+    params: {
+      name: searchValue || undefined,
+    },
   });
 }
 

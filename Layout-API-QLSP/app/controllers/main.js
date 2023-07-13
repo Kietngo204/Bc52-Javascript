@@ -140,7 +140,18 @@ getElement("#btnThemSP").onclick = () => {
     <button class="btn btn-success" onclick="createProduct()">Thêm</button>
   `;
 };
-
+getElement("#txtSearch").onkeypress = (event) => {
+  if (event.key !== "Enter") {
+    return;
+  }
+  apiGetProducts(event.target.value)
+    .then((response) => {
+      display(response.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
 /********************* Utils *********************/
 function getElement(selector) {
   return document.querySelector(selector);
