@@ -47,7 +47,7 @@ function fn1() {}
 // Arrow function
 // - cú pháp ngắn gọn
 // - không có con trỏ this mà sẽ dùng this của hàm cha của nó
-// => Thường dùng để khao báo callback
+// => Thường dùng để khai báo callback
 const fn2 = () => {};
 
 const student = {
